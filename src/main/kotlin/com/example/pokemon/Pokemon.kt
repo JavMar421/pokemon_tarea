@@ -2,7 +2,7 @@ package com.example.pokemon
 
 import kotlin.random.Random
 
-data class Pokemon(val nombre:String,val image:String,val vidaMax:Int,var nivel:Int,val genero:String,var imagenCombate:String,var fotoestado:String,var vidaRest:Int=vidaMax, var click:Boolean=false, var estado:Int=Random.nextInt(3)+1) {
+data class Pokemon(val nombre:String,val image:String,val vidaMax:Int,var nivel:Int,val genero:String,var imagenCombate:String,var fotoestado:String,var vidaRest:Int=vidaMax/2, var click:Boolean=false, var estado:Int=Random.nextInt(3)+1) {
 
         // 0= sin estado
         // 1= envenenado

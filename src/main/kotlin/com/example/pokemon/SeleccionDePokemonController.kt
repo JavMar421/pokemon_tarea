@@ -208,6 +208,10 @@ class SeleccionDePokemonController {
     //Continuar
     @FXML
     private lateinit var continuar:Label
+
+    @FXML
+    private lateinit var mochila:Label
+
     companion object var stage: Stage? =null
 
     //pokemons
@@ -232,6 +236,7 @@ class SeleccionDePokemonController {
 
         //initialize continuar
         continuar.disableProperty().set(true)
+        mochila.disableProperty().set(true)
     }
 
     //Asignaciones  por su array
@@ -289,7 +294,7 @@ class SeleccionDePokemonController {
 
         //Continuar
         continuar.disableProperty().set(false)
-
+        mochila.disableProperty().set(false)
         vBoxClicked(0)
     }
 
@@ -299,7 +304,7 @@ class SeleccionDePokemonController {
         arraypoke[1].click=false
         //Continuar
         continuar.disableProperty().set(false)
-
+        mochila.disableProperty().set(false)
         vBoxClicked(1)
 
     }
@@ -311,7 +316,7 @@ class SeleccionDePokemonController {
 
         //Continuar
         continuar.disableProperty().set(false)
-
+        mochila.disableProperty().set(false)
         vBoxClicked(2)
 
     }
@@ -323,7 +328,7 @@ class SeleccionDePokemonController {
 
         //Continuar
         continuar.disableProperty().set(false)
-
+        mochila.disableProperty().set(false)
         vBoxClicked(3)
 
     }
@@ -335,7 +340,7 @@ class SeleccionDePokemonController {
 
         //Continuar
         continuar.disableProperty().set(false)
-
+        mochila.disableProperty().set(false)
         vBoxClicked(4)
 
     }
@@ -346,7 +351,7 @@ class SeleccionDePokemonController {
 
         //Continuar
         continuar.disableProperty().set(false)
-
+        mochila.disableProperty().set(false)
         vBoxClicked(5)
 
     }
@@ -354,7 +359,7 @@ class SeleccionDePokemonController {
 
     @FXML
     fun continuarClicked(){
-
+        stage=null
         try {
             if(stage==null) {
 
@@ -372,10 +377,10 @@ class SeleccionDePokemonController {
                 var select: Pokemon
 
                 arraypoke.forEachIndexed { index, pokemon ->
-                    println(arraypoke[index].click)
-                    if (pokemon.click) {
-                        select = arraypoke[index]
 
+                    if (pokemon.click) {
+                        println(arraypoke[index].nombre+" seleccionado")
+                        select = arraypoke[index]
                         controller.cargarPokemon(select)
                         controller.enviarDatosMenuSeleccion(this)
                         pokeSelection = PokemonSeleccionadoController()
@@ -383,6 +388,7 @@ class SeleccionDePokemonController {
                     }
                 }
                 continuar.disableProperty().set(true)
+                mochila.disableProperty().set(true)
             }
         }catch (e: IOException){
             e.printStackTrace()
@@ -397,13 +403,54 @@ class SeleccionDePokemonController {
                 interfazPokemon.imagenestado.image=Image(fileEstado.toURI().toString())
                 interfazPokemon.ps.text=pokemon.vidaRest.toString() + "/" + pokemon.vidaMax.toString()
                 interfazPokemon.vida.progress= pokemon.vidaRest.toDouble()/ pokemon.vidaMax.toDouble()
+            if (interfazPokemon.vida.progress>0.5)
+                interfazPokemon.vida.style="-fx-accent:#20ee31"
+
             if (interfazPokemon.vida.progress<0.25)
                 interfazPokemon.vida.style="-fx-accent:red"
             else{
                 if (interfazPokemon.vida.progress<0.5)
                     interfazPokemon.vida.style="-fx-accent:#ff8929"
+
             }
             }
+        }
+    }
+    @FXML
+    fun mochilaClicked(){
+        println("mochila")
+        stage=null
+        try {
+            if(stage==null) {
+                stage = Stage()
+                stage?.isResizable = false
+                val loader = FXMLLoader(HelloApplication::class.java.getResource("mochila.fxml"))
+                val scene = Scene(loader.load(), 600.0, 400.0)
+                stage?.title = "Mochila"
+                stage?.scene = scene
+                stage?.show()
+                //enviar pokemon
+                val controller = loader.getController<MochilaController>()
+                var select: Pokemon
+
+                arraypoke.forEachIndexed { index, pokemon ->
+
+                    if (pokemon.click) {
+                        println(arraypoke[index].nombre+" seleccionado")
+                        select = arraypoke[index]
+                        controller.cargarPokemonMochila(select)
+                        controller.enviarDatosMochila2(this)
+
+                    }
+                }
+
+
+            }
+            mochila.disableProperty().set(true)
+            continuar.disableProperty().set(true)
+        }
+        catch (e: IOException){
+            e.printStackTrace()
         }
     }
 

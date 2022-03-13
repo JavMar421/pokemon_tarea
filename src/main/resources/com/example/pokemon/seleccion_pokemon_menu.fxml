@@ -8,6 +8,7 @@
 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pokemon.SeleccionDePokemonController">
     <children>
         <Label layoutX="15.0" layoutY="370.0" text="Elige un pokemon" textFill="WHITE" />
+      <Label fx:id="mochila" layoutX="300.0" layoutY="370.0" onMouseClicked="#mochilaClicked" text="Mochila" textFill="WHITE" />
         <Label fx:id="continuar" layoutX="560.0" layoutY="370.0" onMouseClicked="#continuarClicked" text="Continuar" textFill="WHITE" />
         <GridPane layoutX="10.0" prefHeight="340.0" prefWidth="663.0" style="-fx-background-color: #F30880;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
             <columnConstraints>

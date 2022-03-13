@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c499c01-404f-49e6-ae65-b22df7642604" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="5c499c01-404f-49e6-ae65-b22df7642604" name="Changes" comment="imagenes">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/pokemon/HelloApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/pokemon/HelloApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/pokemon/MochilaController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/pokemon/MochilaController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/pokemon/Pokemon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/pokemon/Pokemon.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/pokemon/PokemonSeleccionadoController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/pokemon/PokemonSeleccionadoController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/pokemon/SeleccionDePokemonController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/pokemon/SeleccionDePokemonController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pokemon/pokemon_seleccionado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pokemon/pokemon_seleccionado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pokemon/mochila.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pokemon/mochila.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pokemon/seleccion_pokemon_menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pokemon/seleccion_pokemon_menu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +69,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../psp/app" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="pokemon [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -109,6 +109,37 @@
       <option name="presentableId" value="Default" />
       <updated>1646144164432</updated>
     </task>
+    <task id="LOCAL-00001" summary="correccion">
+      <created>1646834070326</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646834070326</updated>
+    </task>
+    <task id="LOCAL-00002" summary="imagenes">
+      <created>1646834249129</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646834249129</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="correccion" />
+    <MESSAGE value="imagenes" />
+    <option name="LAST_COMMIT_MESSAGE" value="imagenes" />
   </component>
 </project>

@@ -7,30 +7,37 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pokemon.MochilaController">
    <children>
       <Label text="Mochila" />
-      <ImageView fx:id="antidoto" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#antidotoclicked" pickOnBounds="true" preserveRatio="true" x="50.0" y="50.0">
+      <ImageView fx:id="antidoto" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#antidotoClicked" pickOnBounds="true" preserveRatio="true" x="50.0" y="50.0">
          <image>
-            <Image url="@Images/veneno.png" />
+            <Image url="@Images/baya.png" />
          </image>
 
       </ImageView>
-      <Label layoutX="50.0" layoutY="165.0" text="Cura el Veneno" />
-      <Label layoutX="50.0" layoutY="25.0" text="Antidoto" />
+      <Label layoutX="50.0" layoutY="165.0" text="Cura 10 PS" />
+      <Label layoutX="50.0" layoutY="25.0" text="Baya" />
 
 
-      <ImageView fx:id="antiquemar" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#antiquemarclicked" pickOnBounds="true" preserveRatio="true" x="250.0" y="50.0">
+      <ImageView fx:id="antiquemar" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#antiquemarClicked" pickOnBounds="true" preserveRatio="true" x="250.0" y="50.0">
          <image>
-            <Image url="@Images/fuego.png" />
+            <Image url="@Images/pocion.png" />
          </image>
       </ImageView>
-      <Label layoutX="250.0" layoutY="165.0" text="Cura las Quemaduras" />
-      <Label layoutX="250.0" layoutY="25.0" text="Antiquemar" />
-      <ImageView fx:id="descongelante" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#descongelanteclicked" pickOnBounds="true" preserveRatio="true" x="450.0" y="50.0">
+      <Label layoutX="250.0" layoutY="165.0" text="Cura 20 PS" />
+      <Label layoutX="250.0" layoutY="25.0" text="Pocion Normal" />
+      <ImageView fx:id="descongelante" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#descongelanteClicked" pickOnBounds="true" preserveRatio="true" x="450.0" y="50.0">
          <image>
-            <Image url="@Images/frio.png" />
+            <Image url="@Images/pocion2.png" />
          </image>
       </ImageView>
-      <Label layoutX="450.0" layoutY="25.0" text="Descongelante" />
-      <Label layoutX="450.0" layoutY="165.0" text="Cura la Congelacion" />
+      <Label layoutX="450.0" layoutY="25.0" text="SuperPocion" />
+      <Label layoutX="450.0" layoutY="165.0" text="Cura un 10% de PS" />
+      <ImageView fx:id="desparalizar" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#desparalizarClicked" pickOnBounds="true" preserveRatio="true" x="50.0" y="250.0">
+         <image>
+            <Image url="@Images/pocion3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="50.0" layoutY="225.0" text="Hiperpocion" />
+      <Label layoutX="50.0" layoutY="370.0" text="Cura un 20% de PS" />
    </children>
 
 </AnchorPane>

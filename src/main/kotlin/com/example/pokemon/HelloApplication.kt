@@ -12,11 +12,11 @@ class HelloApplication : Application() {
 
 
         //Creación de objetos Pokemon
-        val poke1=Pokemon("Alakazam","src\\main\\resources\\com\\example\\pokemon\\Images\\alakazam1.gif",180,50,"src\\main\\resources\\com\\example\\pokemon\\Images\\Macho.gif","src\\main\\resources\\com\\example\\pokemon\\Images\\alakazam1_combate.gif","")
-        val poke2=Pokemon("Arcanine","src\\main\\resources\\com\\example\\pokemon\\Images\\arcanine1.gif",210,50,"src\\main\\resources\\com\\example\\pokemon\\Images\\Hembra.gif","src\\main\\resources\\com\\example\\pokemon\\Images\\arcanine1_combate.gif","")
+        val poke1=Pokemon("Alakazam","src\\main\\resources\\com\\example\\pokemon\\Images\\alakazam1.gif",190,50,"src\\main\\resources\\com\\example\\pokemon\\Images\\Macho.gif","src\\main\\resources\\com\\example\\pokemon\\Images\\alakazam1_combate.gif","")
+        val poke2=Pokemon("Arcanine","src\\main\\resources\\com\\example\\pokemon\\Images\\arcanine1.gif",230,50,"src\\main\\resources\\com\\example\\pokemon\\Images\\Hembra.gif","src\\main\\resources\\com\\example\\pokemon\\Images\\arcanine1_combate.gif","")
         val poke3=Pokemon("Golem","src\\main\\resources\\com\\example\\pokemon\\Images\\golem1.gif",250,50,"src\\main\\resources\\com\\example\\pokemon\\Images\\Macho.gif","src\\main\\resources\\com\\example\\pokemon\\Images\\golem1_combate.gif","")
-        val poke4=Pokemon("Gyarados","src\\main\\resources\\com\\example\\pokemon\\Images\\gyarados1.gif",230,50,"src\\main\\resources\\com\\example\\pokemon\\Images\\Macho.gif","src\\main\\resources\\com\\example\\pokemon\\Images\\gyarados1_combate.gif","")
-        val poke5=Pokemon("Nidoking","src\\main\\resources\\com\\example\\pokemon\\Images\\nidoking1.gif",200,50,"file:","src\\main\\resources\\com\\example\\pokemon\\Images\\nidoking1_combate.gif","")
+        val poke4=Pokemon("Gyarados","src\\main\\resources\\com\\example\\pokemon\\Images\\gyarados1.gif",270,50,"src\\main\\resources\\com\\example\\pokemon\\Images\\Macho.gif","src\\main\\resources\\com\\example\\pokemon\\Images\\gyarados1_combate.gif","")
+        val poke5=Pokemon("Nidoking","src\\main\\resources\\com\\example\\pokemon\\Images\\nidoking1.gif",240,50,"file:","src\\main\\resources\\com\\example\\pokemon\\Images\\nidoking1_combate.gif","")
         val poke6=Pokemon("Zapdos","src\\main\\resources\\com\\example\\pokemon\\Images\\zapdos1.gif",190,54,"src\\main\\resources\\com\\example\\pokemon\\Images\\Macho.gif","src\\main\\resources\\com\\example\\pokemon\\Images\\zapdos1_combate.gif","")
         poke1.checkEstado()
         poke2.checkEstado()
@@ -25,11 +25,12 @@ class HelloApplication : Application() {
         poke5.checkEstado()
         poke6.checkEstado()
 
+
         //Creacción de objetos Pokemon enemigos
-        val pokeEnemy1=PokeEnemy("Deoxys","src\\main\\resources\\com\\example\\pokemon\\Images\\deoxys_enemigo.gif",50,190)
-        val pokeEnemy2=PokeEnemy("Lugia","src\\main\\resources\\com\\example\\pokemon\\Images\\lugia_enemigo.gif",50,210)
-        val pokeEnemy3=PokeEnemy("Scizor","src\\main\\resources\\com\\example\\pokemon\\Images\\scizor_enemigo.gif",50,230)
-        val pokeEnemy4=PokeEnemy("Metagross","src\\main\\resources\\com\\example\\pokemon\\Images\\metagross_enemigo.gif",50,250)
+        val pokeEnemy1=PokeEnemy("Deoxys","src\\main\\resources\\com\\example\\pokemon\\Images\\deoxys_enemigo.gif",50,180)
+        val pokeEnemy2=PokeEnemy("Lugia","src\\main\\resources\\com\\example\\pokemon\\Images\\lugia_enemigo.gif",50,180)
+        val pokeEnemy3=PokeEnemy("Scizor","src\\main\\resources\\com\\example\\pokemon\\Images\\scizor_enemigo.gif",50,180)
+        val pokeEnemy4=PokeEnemy("Metagross","src\\main\\resources\\com\\example\\pokemon\\Images\\metagross_enemigo.gif",50,180)
         //Rellenar lista de Pokemon Enemigo
         enemypoke.add(pokeEnemy1)
         enemypoke.add(pokeEnemy2)
